@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AGEIS SUPPORT</title>
+    <meta name="description" content="Get in touch with AGEIS SUPPORT. Contact us for questions, support, or to learn more about our care services.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Accessibility Controls -->
+    <div class="accessibility-controls">
+        <button id="fontIncrease" class="access-btn" title="Increase font size">
+            <i class="fas fa-plus"></i>
+        </button>
+        <button id="fontDecrease" class="access-btn" title="Decrease font size">
+            <i class="fas fa-minus"></i>
+        </button>
+        <button id="highContrast" class="access-btn" title="Toggle high contrast">
+            <i class="fas fa-adjust"></i>
+        </button>
+        <button id="voiceAssist" class="access-btn" title="Voice assistance">
+            <i class="fas fa-volume-up"></i>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>AGEIS SUPPORT</h1>
+                </div>
+                
+                <!-- Mobile Hamburger Menu -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="book-service.html" class="btn btn-primary">Book Now</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header contact-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We're here to help. Get in touch with our friendly support team.</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p class="contact-number">1800 AGEIS (1800 24347)</p>
+                    <p class="contact-hours">Monday - Friday: 8AM - 6PM<br>Saturday: 9AM - 4PM</p>
+                    <a href="tel:180024347" class="btn btn-primary">Call Now</a>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p class="contact-email">support@ageis.com.au</p>
+                    <p class="contact-response">We'll respond within 24 hours</p>
+                    <a href="mailto:support@ageis.com.au" class="btn btn-primary">Send Email</a>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p class="contact-address">123 Collins Street<br>Melbourne VIC 3000<br>Australia</p>
+                    <p class="contact-hours">Monday - Friday: 9AM - 5PM</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-primary">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-content">
+                <div class="form-info">
+                    <h2>Send Us a Message</h2>
+                    <p>Have a question or need assistance? Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <div class="form-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Quick response within 24 hours</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Your information is secure and confidential</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Friendly, professional support</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general-inquiry">General Inquiry</option>
+                                <option value="service-booking">Service Booking Help</option>
+                                <option value="funding-assistance">Funding Assistance</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Please describe your inquiry or how we can help you..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                I would like to receive updates about AGEIS SUPPORT services and resources
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I book a service?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Booking is simple and free! You can book online through our booking form, call us at 1800 AGEIS, or email us. We'll match you with qualified service providers in your area.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What government funding is available?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We help you access NDIS funding, Aged Care packages, and Medicare rebates for mental health services. Our team can assist you in understanding and applying for these programs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How quickly can I get service?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For urgent needs, we can arrange services within 24 hours. Standard bookings are typically scheduled within 1-2 weeks. Emergency services are available 24/7.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are your service providers qualified?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! All our service providers are fully qualified, background-checked, and registered with relevant professional bodies. We maintain the highest standards of care and safety.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What areas do you service?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide services across Australia, with strong coverage in major cities and regional areas. Contact us to confirm availability in your specific location.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I change or cancel my booking?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! You can modify or cancel your booking up to 24 hours before the scheduled service. We understand that needs can change, and we're flexible to accommodate you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contacts -->
+    <section id="emergency" class="emergency-contacts-section">
+        <div class="container">
+            <h2>Emergency Contacts</h2>
+            <p class="emergency-intro">If you're in immediate distress or experiencing a crisis, please reach out to these 24/7 support services.</p>
+            
+            <div class="emergency-grid">
+                <div class="emergency-card urgent">
+                    <div class="emergency-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Lifeline</h3>
+                    <p class="emergency-number">13 11 14</p>
+                    <p>24/7 crisis support and suicide prevention</p>
+                    <a href="tel:131114" class="btn btn-primary">Call Now</a>
+                </div>
+                
+                <div class="emergency-card urgent">
+                    <div class="emergency-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Beyond Blue</h3>
+                    <p class="emergency-number">1300 22 4636</p>
+                    <p>Mental health support and information</p>
+                    <a href="tel:1300224636" class="btn btn-primary">Call Now</a>
+                </div>
+                
+                <div class="emergency-card urgent">
+                    <div class="emergency-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Emergency Services</h3>
+                    <p class="emergency-number">000</p>
+                    <p>Police, ambulance, fire services</p>
+                    <a href="tel:000" class="btn btn-primary">Call Now</a>
+                </div>
+                
+                <div class="emergency-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Suicide Call Back Service</h3>
+                    <p class="emergency-number">1300 659 467</p>
+                    <p>Professional telephone and online counseling</p>
+                    <a href="tel:1300659467" class="btn btn-outline">Call Now</a>
+                </div>
+                
+                <div class="emergency-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Kids Helpline</h3>
+                    <p class="emergency-number">1800 55 1800</p>
+                    <p>Free, private counseling for young people</p>
+                    <a href="tel:1800551800" class="btn btn-outline">Call Now</a>
+                </div>
+                
+                <div class="emergency-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-male"></i>
+                    </div>
+                    <h3>MensLine Australia</h3>
+                    <p class="emergency-number">1300 78 99 78</p>
+                    <p>Professional support for men and their families</p>
+                    <a href="tel:1300789978" class="btn btn-outline">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Hours -->
+    <section class="office-hours">
+        <div class="container">
+            <div class="hours-content">
+                <div class="hours-text">
+                    <h2>Office Hours</h2>
+                    <div class="hours-schedule">
+                        <div class="hours-item">
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">8:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Saturday</span>
+                            <span class="time">9:00 AM - 4:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Sunday</span>
+                            <span class="time">Closed</span>
+                        </div>
+                        <div class="hours-item emergency-hours">
+                            <span class="day">Emergency Support</span>
+                            <span class="time">24/7 Available</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hours-image">
+                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Professional office environment" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AGEIS SUPPORT</h3>
+                    <p>Empowering lives with care, dignity, and support. Connecting Australians to essential care services.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="book-service.html">Book a Service</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html#faq">FAQ</a></li>
+                        <li><a href="contact.html#emergency">Emergency Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 1800 AGEIS (1800 24347)</p>
+                        <p><i class="fas fa-envelope"></i> support@ageis.com.au</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Melbourne, Australia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AGEIS SUPPORT. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

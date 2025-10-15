@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AGEIS SUPPORT</title>
+    <meta name="description" content="Learn about AGEIS SUPPORT's mission to provide accessible care services for elderly, disabled, and mentally depressed individuals in Australia.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Accessibility Controls -->
+    <div class="accessibility-controls">
+        <button id="fontIncrease" class="access-btn" title="Increase font size">
+            <i class="fas fa-plus"></i>
+        </button>
+        <button id="fontDecrease" class="access-btn" title="Decrease font size">
+            <i class="fas fa-minus"></i>
+        </button>
+        <button id="highContrast" class="access-btn" title="Toggle high contrast">
+            <i class="fas fa-adjust"></i>
+        </button>
+        <button id="voiceAssist" class="access-btn" title="Voice assistance">
+            <i class="fas fa-volume-up"></i>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>AGEIS SUPPORT</h1>
+                </div>
+                
+                <!-- Mobile Hamburger Menu -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html#home-assistance">Home Assistance</a></li>
+                            <li><a href="services.html#personal-care">Personal Care</a></li>
+                            <li><a href="services.html#nursing-care">Nursing Care</a></li>
+                            <li><a href="services.html#transport">Transport</a></li>
+                            <li><a href="services.html#mental-health">Mental Health</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="book-service.html" class="btn btn-primary">Book Now</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About AGEIS SUPPORT</h1>
+            <p>Empowering lives with care, dignity, and support across Australia</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="mission-content">
+                <div class="mission-text">
+                    <h2>Our Mission</h2>
+                    <p class="mission-statement">We believe care and kindness should be accessible to everyone, regardless of age, ability, or circumstance.</p>
+                    <p>AGEIS SUPPORT was founded on the principle that every Australian deserves access to quality care services. We bridge the gap between those who need help and the trusted service providers who can offer it, making the process simple, safe, and emotionally comforting.</p>
+                    
+                    <div class="mission-values">
+                        <div class="value-item">
+                            <i class="fas fa-heart"></i>
+                            <h3>Compassion</h3>
+                            <p>We approach every interaction with empathy and understanding.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Trust</h3>
+                            <p>We maintain the highest standards of safety and reliability.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Community</h3>
+                            <p>We foster connections that strengthen our communities.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <h3>Dignity</h3>
+                            <p>We respect and preserve the dignity of every individual we serve.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mission-image">
+                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Caregiver and elderly person having a conversation" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision-section">
+        <div class="container">
+            <div class="vision-content">
+                <div class="vision-image">
+                    <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Diverse group of people supporting each other" loading="lazy">
+                </div>
+                <div class="vision-text">
+                    <h2>Our Vision</h2>
+                    <p class="vision-statement">Support for every stage of life through compassion and connection.</p>
+                    <p>We envision a future where no Australian faces their challenges alone. Our platform serves as a digital helping hand, connecting elderly citizens, people with disabilities, and individuals struggling with mental health to the support they need.</p>
+                    
+                    <div class="vision-goals">
+                        <div class="goal-item">
+                            <div class="goal-number">1</div>
+                            <div class="goal-content">
+                                <h3>Accessible Care</h3>
+                                <p>Making quality care services accessible to all Australians, regardless of location or financial circumstances.</p>
+                            </div>
+                        </div>
+                        <div class="goal-item">
+                            <div class="goal-number">2</div>
+                            <div class="goal-content">
+                                <h3>Government Integration</h3>
+                                <p>Seamlessly connecting users with NDIS, Aged Care, and mental health funding programs.</p>
+                            </div>
+                        </div>
+                        <div class="goal-item">
+                            <div class="goal-number">3</div>
+                            <div class="goal-content">
+                                <h3>Community Building</h3>
+                                <p>Creating stronger, more supportive communities through meaningful connections.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Government Partnership Section -->
+    <section class="partnership-section">
+        <div class="container">
+            <h2>Government Partnership</h2>
+            <p class="partnership-intro">We assist users in accessing NDIS and Aged Care services, making government-funded support more accessible and understandable.</p>
+            
+            <div class="partnership-cards">
+                <div class="partnership-card">
+                    <div class="partnership-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>NDIS Support</h3>
+                    <p>We help individuals with disabilities navigate the National Disability Insurance Scheme, connecting them with registered providers and ensuring they receive the support they're entitled to.</p>
+                    <ul>
+                        <li>NDIS plan management assistance</li>
+                        <li>Provider matching and coordination</li>
+                        <li>Plan review support</li>
+                        <li>Service quality monitoring</li>
+                    </ul>
+                </div>
+                
+                <div class="partnership-card">
+                    <div class="partnership-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Aged Care Services</h3>
+                    <p>We facilitate access to government-funded aged care services, including home care packages and residential care options.</p>
+                    <ul>
+                        <li>Home care package coordination</li>
+                        <li>Residential care placement assistance</li>
+                        <li>Assessment support</li>
+                        <li>Family consultation services</li>
+                    </ul>
+                </div>
+                
+                <div class="partnership-card">
+                    <div class="partnership-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Mental Health Programs</h3>
+                    <p>We connect individuals with Medicare-funded mental health services and community support programs.</p>
+                    <ul>
+                        <li>Mental health plan coordination</li>
+                        <li>Therapy service matching</li>
+                        <li>Crisis support connections</li>
+                        <li>Recovery program assistance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <p class="team-intro">Our dedicated team of professionals is committed to making care accessible and compassionate.</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Sarah Johnson" loading="lazy">
+                    </div>
+                    <div class="member-info">
+                        <h3>Sarah Johnson</h3>
+                        <p class="member-role">Chief Executive Officer</p>
+                        <p class="member-bio">With over 15 years in healthcare management, Sarah leads our mission to make quality care accessible to all Australians.</p>
+                        <div class="member-qualifications">
+                            <span class="qualification">RN, BSc Nursing</span>
+                            <span class="qualification">MBA Healthcare Management</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Michael Chen" loading="lazy">
+                    </div>
+                    <div class="member-info">
+                        <h3>Michael Chen</h3>
+                        <p class="member-role">Director of Care Services</p>
+                        <p class="member-bio">Michael oversees our care coordination team, ensuring every client receives personalized, high-quality support.</p>
+                        <div class="member-qualifications">
+                            <span class="qualification">MSW Social Work</span>
+                            <span class="qualification">Certified Care Coordinator</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Emma Rodriguez" loading="lazy">
+                    </div>
+                    <div class="member-info">
+                        <h3>Emma Rodriguez</h3>
+                        <p class="member-role">Mental Health Coordinator</p>
+                        <p class="member-bio">Emma specializes in mental health support, connecting clients with appropriate therapy and counseling services.</p>
+                        <div class="member-qualifications">
+                            <span class="qualification">MA Psychology</span>
+                            <span class="qualification">Licensed Counselor</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="David Thompson" loading="lazy">
+                    </div>
+                    <div class="member-info">
+                        <h3>David Thompson</h3>
+                        <p class="member-role">NDIS Specialist</p>
+                        <p class="member-bio">David helps clients navigate the NDIS system, ensuring they receive the support and funding they're entitled to.</p>
+                        <div class="member-qualifications">
+                            <span class="qualification">NDIS Certified Planner</span>
+                            <span class="qualification">Disability Services Diploma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications-section">
+        <div class="container">
+            <h2>Certifications & Compliance</h2>
+            <p class="certifications-intro">We maintain the highest standards of care and compliance with Australian regulations.</p>
+            
+            <div class="certifications-grid">
+                <div class="certification-item">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>NDIS Registered Provider</h3>
+                    <p>Fully registered with the National Disability Insurance Agency</p>
+                </div>
+                
+                <div class="certification-item">
+                    <div class="cert-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Aged Care Quality Standards</h3>
+                    <p>Compliant with all Aged Care Quality and Safety Commission standards</p>
+                </div>
+                
+                <div class="certification-item">
+                    <div class="cert-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Mental Health Accreditation</h3>
+                    <p>Accredited by the Australian Mental Health Accreditation Council</p>
+                </div>
+                
+                <div class="certification-item">
+                    <div class="cert-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Privacy Compliance</h3>
+                    <p>Fully compliant with Australian Privacy Principles and GDPR</p>
+                </div>
+                
+                <div class="certification-item">
+                    <div class="cert-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Quality Assurance</h3>
+                    <p>ISO 9001:2015 certified quality management system</p>
+                </div>
+                
+                <div class="certification-item">
+                    <div class="cert-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Staff Screening</h3>
+                    <p>All staff undergo comprehensive background checks and ongoing training</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Join thousands of Australians who have found the support they need through AGEIS SUPPORT.</p>
+                <div class="cta-buttons">
+                    <a href="book-service.html" class="btn btn-primary btn-large">Book a Service</a>
+                    <a href="contact.html" class="btn btn-secondary btn-large">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AGEIS SUPPORT</h3>
+                    <p>Empowering lives with care, dignity, and support. Connecting Australians to essential care services.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="book-service.html">Book a Service</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html#faq">FAQ</a></li>
+                        <li><a href="contact.html#emergency">Emergency Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 1800 AGEIS (1800 24347)</p>
+                        <p><i class="fas fa-envelope"></i> support@ageis.com.au</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Melbourne, Australia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AGEIS SUPPORT. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

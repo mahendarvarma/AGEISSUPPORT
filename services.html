@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - AGEIS SUPPORT</title>
+    <meta name="description" content="Comprehensive care services for elderly, disabled, and mental health support. Home assistance, personal care, nursing, transport, and mental health services.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Accessibility Controls -->
+    <div class="accessibility-controls">
+        <button id="fontIncrease" class="access-btn" title="Increase font size">
+            <i class="fas fa-plus"></i>
+        </button>
+        <button id="fontDecrease" class="access-btn" title="Decrease font size">
+            <i class="fas fa-minus"></i>
+        </button>
+        <button id="highContrast" class="access-btn" title="Toggle high contrast">
+            <i class="fas fa-adjust"></i>
+        </button>
+        <button id="voiceAssist" class="access-btn" title="Voice assistance">
+            <i class="fas fa-volume-up"></i>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>AGEIS SUPPORT</h1>
+                </div>
+                
+                <!-- Mobile Hamburger Menu -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link active">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="book-service.html" class="btn btn-primary">Book Now</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header services-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive care services tailored to your needs. From home assistance to mental health support.</p>
+        </div>
+    </section>
+
+    <!-- Service Filter -->
+    <section class="service-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-category="all">All Services</button>
+                <button class="filter-btn" data-category="home-assistance">Home Assistance</button>
+                <button class="filter-btn" data-category="personal-care">Personal Care</button>
+                <button class="filter-btn" data-category="nursing-care">Nursing Care</button>
+                <button class="filter-btn" data-category="transport">Transport</button>
+                <button class="filter-btn" data-category="mental-health">Mental Health</button>
+                <button class="filter-btn" data-category="social-support">Social Support</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Home Assistance Services -->
+                <div class="service-card" data-category="home-assistance">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home Cleaning</h3>
+                    <p>Professional cleaning services to maintain a safe and comfortable living environment. Regular or one-time cleaning available.</p>
+                    <ul class="service-features">
+                        <li>General house cleaning</li>
+                        <li>Kitchen and bathroom sanitization</li>
+                        <li>Dusting and vacuuming</li>
+                        <li>Laundry assistance</li>
+                    </ul>
+                    <a href="book-service.html" class="btn btn-primary">Book Service</a>
+                </div>
+
+                <div class="service-card" data-category="home-assistance">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Meal Preparation</h3>
+                    <p>Nutritious meal planning and preparation tailored to dietary requirements and preferences.</p>
+                    <ul class="service-features">
+                        <li>Meal planning consultation</li>
+                        <li>Fresh ingredient shopping</li>
+                        <li>Dietary restriction accommodation</li>
+                        <li>Batch cooking and freezing</li>
+                    </ul>
+                    <a href="book-service.html" class="btn btn-primary">Book Service</a>
+                </div>
+
+                <div class="service-card" data-category="home-assistance">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Home Maintenance</h3>
+                    <p>Minor repairs, maintenance tasks, and home safety improvements to keep your home safe and functional.</p>
+                    <ul class="service-features">
+                        <li>Minor repairs and fixes</li>
+                        <li>Safety equipment installation</li>
+                        <li>Garden maintenance</li>
+                        <li>Home safety assessments</li>
+                    </ul>
+                    <a href="book-service.html" class="btn btn-primary">Book Service</a>
+                </div>
+
+                <!-- Personal Care Services -->
+                <div class="service-card" data-category="personal-care">
+                    <div class="service-icon">
+                        <i class="fas fa-user-nurse"></i>
+                    </div>
+                    <h3>Personal Care</h3>
+                    <p>Assistance with bathing, dressing, grooming, and other personal hygiene needs with dignity and respect.</p>
+                    <ul class="service-features">
+                        <li>Bathing and showering assistance</li>
+                        <li>Dressing and grooming support</li>
+                        <li>Mobility assistance</li>
+                        <li>Personal hygiene maintenance</li>
+                    </ul>
+                    <a href="book-service.html" class="btn btn-primary">Book Service</a>
+                </div>
+
+                <div class="service-card" data-category="personal-care">
+                    <div class="service-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Medication Management</h3>
+                    <p>Professional assistance with medication organization, reminders, and administration support.</p>
+                    <ul class="service-features">
+                        <li>Medication organization</li>
+                        <li>Dosage reminders</li>
+                        <li>Prescription management</li>
+                        <li>Health monitoring</li>
+                    </ul>
+                    <a href="book-service.html" class="btn btn-primary">Book Service</a>
+                </div>
+
+                <!-- Nursing Care Services -->
+                <div class="service-card" data-category="nursing-care">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Nursing Care</h3>
+                    <p>Professional nursing services including medical checkups, wound care, and health monitoring.</p>
+                    <ul class="service-features">
+                        <li>Health assessments</li>
+                        <li>Wound care and dressing</li>
+                        <li>Vital signs monitoring</li>
+                        <li>Medical equipment management</li>
+                    </ul>
+                    <a href="book-service.html" class="btn btn-primary">Book Service</a>
+                </div>
+
+                <div class="service-card" data-category="nursing-care">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Health Monitoring</h3>
+                    <p>Regular health checks and monitoring to ensure optimal health and early detection of issues.</p>
+                    <ul class="service-features">
+                        <li>Blood pressure monitoring</li>
+                        <li>Blood sugar testing</li>
+                        <li>Weight tracking</li>
+                        <li>Health report generation</li>
+                    </ul>
+                    <a href="book-service.html" class="btn btn-primary">Book Service</a>
+                </div>
+
+                <!-- Transport Services -->
+                <div class="service-card" data-category="transport">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Medical Transport</h3>
+                    <p>Safe transportation for medical appointments, hospital visits, and healthcare-related trips.</p>
+                    <ul class="service-features">
+                        <li>Medical appointment transport</li>
+                        <li>Hospital visits</li>
+                        <li>Pharmacy trips</li>
+                        <li>Wheelchair accessible vehicles</li>
+                    </ul>
+                    <a href="book-service.html" class="btn btn-primary">Book Service</a>
+                </div>
+
+                <div class="service-card" data-category="transport">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Shopping Transport</h3>
+                    <p>Convenient transportation for grocery shopping, errands, and social activities.</p>
+                    <ul class="service-features">
+                        <li>Grocery shopping trips</li>
+                        <li>Errand running</li>
+                        <li>Social activity transport</li>
+                        <li>Assistance with shopping</li>
+                    </ul>
+                    <a href="book-service.html" class="btn btn-primary">Book Service</a>
+                </div>
+
+                <!-- Mental Health Services -->
+                <div class="service-card mental-health-card" data-category="mental-health">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Individual Counseling</h3>
+                    <p>One-on-one sessions with licensed therapists to address personal challenges, depression, and emotional well-being.</p>
+                    <ul class="service-features">
+                        <li>Personalized treatment plans</li>
+                        <li>Evidence-based therapies</li>
+                        <li>Flexible scheduling</li>
+                        <li>Confidential sessions</li>
+                    </ul>
+                    <a href="book-service.html" class="btn btn-primary">Book Session</a>
+                </div>
+
+                <div class="service-card mental-health-card" data-category="mental-health">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Online Therapy</h3>
+                    <p>Convenient virtual counseling sessions from the comfort of your home, perfect for those with mobility challenges.</p>
+                    <ul class="service-features">
+                        <li>Secure video sessions</li>
+                        <li>Same-day appointments</li>
+                        <li>Digital resources</li>
+                        <li>Mobile-friendly platform</li>
+                    </ul>
+                    <a href="book-service.html" class="btn btn-primary">Book Online</a>
+                </div>
+
+                <div class="service-card mental-health-card" data-category="mental-health">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Support Groups</h3>
+                    <p>Connect with others facing similar challenges in a safe, supportive group environment facilitated by mental health professionals.</p>
+                    <ul class="service-features">
+                        <li>Peer support</li>
+                        <li>Professional facilitation</li>
+                        <li>Regular meetings</li>
+                        <li>Community building</li>
+                    </ul>
+                    <a href="book-service.html" class="btn btn-primary">Join Group</a>
+                </div>
+
+                <div class="service-card mental-health-card" data-category="mental-health">
+                    <div class="service-icon">
+                        <i class="fas fa-family"></i>
+                    </div>
+                    <h3>Family Counseling</h3>
+                    <p>Support for families dealing with mental health challenges, including education and communication strategies.</p>
+                    <ul class="service-features">
+                        <li>Family therapy sessions</li>
+                        <li>Education programs</li>
+                        <li>Communication skills</li>
+                        <li>Support for caregivers</li>
+                    </ul>
+                    <a href="book-service.html" class="btn btn-primary">Book Family Session</a>
+                </div>
+
+                <!-- Social Support Services -->
+                <div class="service-card" data-category="social-support">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Companionship</h3>
+                    <p>Friendly companionship and social interaction to reduce loneliness and improve quality of life.</p>
+                    <ul class="service-features">
+                        <li>Friendly conversation</li>
+                        <li>Social activities</li>
+                        <li>Emotional support</li>
+                        <li>Regular visits</li>
+                    </ul>
+                    <a href="book-service.html" class="btn btn-primary">Book Service</a>
+                </div>
+
+                <div class="service-card" data-category="social-support">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Social Activities</h3>
+                    <p>Organized social activities and community programs to promote engagement and well-being.</p>
+                    <ul class="service-features">
+                        <li>Group activities</li>
+                        <li>Community outings</li>
+                        <li>Hobby groups</li>
+                        <li>Cultural events</li>
+                    </ul>
+                    <a href="book-service.html" class="btn btn-primary">Book Activity</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Mental Health Support -->
+    <section class="emergency-support">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-text">
+                    <h2>Mental Health Crisis Support</h2>
+                    <p>If you or someone you know is experiencing a mental health crisis, help is available 24/7.</p>
+                    <div class="emergency-contacts">
+                        <div class="emergency-contact">
+                            <strong>Lifeline:</strong> 13 11 14
+                        </div>
+                        <div class="emergency-contact">
+                            <strong>Beyond Blue:</strong> 1300 22 4636
+                        </div>
+                        <div class="emergency-contact">
+                            <strong>Emergency Services:</strong> 000
+                        </div>
+                    </div>
+                </div>
+                <div class="emergency-image">
+                    <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Supportive community" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Government Funding Information -->
+    <section class="funding-info-section">
+        <div class="container">
+            <h2>Government Funding Available</h2>
+            <div class="funding-cards">
+                <div class="funding-card">
+                    <div class="funding-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>NDIS Support</h3>
+                    <p>Access National Disability Insurance Scheme funding for disability-related services and support.</p>
+                    <ul>
+                        <li>Personal care services</li>
+                        <li>Home assistance</li>
+                        <li>Transport services</li>
+                        <li>Therapy and counseling</li>
+                    </ul>
+                </div>
+                
+                <div class="funding-card">
+                    <div class="funding-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Aged Care Funding</h3>
+                    <p>Government-funded aged care services including home care packages and residential care.</p>
+                    <ul>
+                        <li>Home care packages</li>
+                        <li>Personal care assistance</li>
+                        <li>Domestic assistance</li>
+                        <li>Social support</li>
+                    </ul>
+                </div>
+                
+                <div class="funding-card">
+                    <div class="funding-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Mental Health Services</h3>
+                    <p>Access to Medicare-funded mental health services and psychological support.</p>
+                    <ul>
+                        <li>Mental health plans</li>
+                        <li>Psychological therapy</li>
+                        <li>Counseling services</li>
+                        <li>Group therapy programs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Find the right service for your needs and book with confidence.</p>
+                <div class="cta-buttons">
+                    <a href="book-service.html" class="btn btn-primary btn-large">Book a Service</a>
+                    <a href="contact.html" class="btn btn-secondary btn-large">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AGEIS SUPPORT</h3>
+                    <p>Empowering lives with care, dignity, and support. Connecting Australians to essential care services.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="book-service.html">Book a Service</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html#faq">FAQ</a></li>
+                        <li><a href="contact.html#emergency">Emergency Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 1800 AGEIS (1800 24347)</p>
+                        <p><i class="fas fa-envelope"></i> support@ageis.com.au</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Melbourne, Australia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AGEIS SUPPORT. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

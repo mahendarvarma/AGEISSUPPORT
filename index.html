@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGEIS SUPPORT - Empowering Lives with Care, Dignity, and Support</title>
+    <meta name="description" content="Free booking for aged care, disability, and mental health services in Australia. Connecting elderly, disabled, and mentally depressed individuals to essential support services.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Accessibility Controls -->
+    <div class="accessibility-controls">
+        <button id="fontIncrease" class="access-btn" title="Increase font size">
+            <i class="fas fa-plus"></i>
+        </button>
+        <button id="fontDecrease" class="access-btn" title="Decrease font size">
+            <i class="fas fa-minus"></i>
+        </button>
+        <button id="highContrast" class="access-btn" title="Toggle high contrast">
+            <i class="fas fa-adjust"></i>
+        </button>
+        <button id="voiceAssist" class="access-btn" title="Voice assistance">
+            <i class="fas fa-volume-up"></i>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>AGEIS SUPPORT</h1>
+                </div>
+                
+                <!-- Mobile Hamburger Menu -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html#home-assistance">Home Assistance</a></li>
+                            <li><a href="services.html#personal-care">Personal Care</a></li>
+                            <li><a href="services.html#nursing-care">Nursing Care</a></li>
+                            <li><a href="services.html#transport">Transport</a></li>
+                            <li><a href="services.html#mental-health">Mental Health</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="book-service.html" class="btn btn-primary">Book Now</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Empowering Lives with Care, Dignity, and Support</h1>
+                <p>Free booking for aged care, disability, and mental health services. We connect you with trusted service providers and help you access government-funded support.</p>
+                <div class="hero-buttons">
+                    <a href="book-service.html" class="btn btn-primary btn-large">Book a Service</a>
+                    <a href="#government-support" class="btn btn-secondary btn-large">Learn About Government Support</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Caregiver helping elderly person" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Help Section -->
+    <section class="who-we-help">
+        <div class="container">
+            <h2>Who We Help</h2>
+            <div class="help-cards">
+                <div class="help-card">
+                    <div class="card-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Seniors</h3>
+                    <p>Elderly citizens aged 60+ needing help with daily activities, companionship, and accessing aged care services.</p>
+                </div>
+                <div class="help-card">
+                    <div class="card-icon">
+                        <i class="fas fa-wheelchair"></i>
+                    </div>
+                    <h3>People with Disabilities</h3>
+                    <p>Individuals seeking government-funded or private assistance through NDIS and other disability support programs.</p>
+                </div>
+                <div class="help-card">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Mental Health Support</h3>
+                    <p>Individuals suffering from depression or mental stress who need emotional care, therapy, or counseling support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Services Section -->
+    <section class="top-services">
+        <div class="container">
+            <h2>Our Key Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home Cleaning</h3>
+                    <p>Professional cleaning services to maintain a safe and comfortable living environment.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-nurse"></i>
+                    </div>
+                    <h3>Personal Care</h3>
+                    <p>Assistance with bathing, dressing, grooming, and other personal hygiene needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Transport</h3>
+                    <p>Safe transportation for medical appointments, social activities, and daily errands.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Meal Preparation</h3>
+                    <p>Nutritious meal planning and preparation tailored to dietary requirements.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Nursing Care</h3>
+                    <p>Medical checkups, wound care, medication management, and health monitoring.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Mental Therapy</h3>
+                    <p>Professional counseling and therapy sessions for mental health support.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Social Support</h3>
+                    <p>Community activities, group sessions, and social engagement programs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Home Maintenance</h3>
+                    <p>Minor repairs, maintenance tasks, and home safety improvements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Choose a Service</h3>
+                        <p>Browse our comprehensive list of services and select what you need.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Book for Free</h3>
+                        <p>Fill out our simple booking form - no payment required upfront.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>We Connect You</h3>
+                        <p>We match you with trusted service providers and coordinate your care.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Government Support Section -->
+    <section id="government-support" class="government-support">
+        <div class="container">
+            <h2>Government Support Programs</h2>
+            <div class="support-cards">
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>NDIS Support</h3>
+                    <p>Access National Disability Insurance Scheme funding for disability-related services and support.</p>
+                    <a href="resources.html#ndis" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Aged Care Funding</h3>
+                    <p>Government-funded aged care services including home care packages and residential care.</p>
+                    <a href="resources.html#aged-care" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Mental Health Services</h3>
+                    <p>Access to Medicare-funded mental health services and psychological support.</p>
+                    <a href="mental-health.html" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Community Says</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"AGEIS SUPPORT helped my mother find reliable care easily! The booking process was simple and the caregivers were wonderful."</p>
+                        <div class="testimonial-author">
+                            <strong>Sarah M.</strong>
+                            <span>Daughter of elderly client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The mental health support I received through AGEIS SUPPORT was life-changing. Professional, caring, and accessible."</p>
+                        <div class="testimonial-author">
+                            <strong>Michael R.</strong>
+                            <span>Mental health client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"As someone with a disability, AGEIS SUPPORT made it easy to access NDIS services and find the right support workers."</p>
+                        <div class="testimonial-author">
+                            <strong>Emma L.</strong>
+                            <span>NDIS participant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-btn prev" onclick="changeTestimonial(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="testimonial-btn next" onclick="changeTestimonial(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AGEIS SUPPORT</h3>
+                    <p>Empowering lives with care, dignity, and support. Connecting Australians to essential care services.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="book-service.html">Book a Service</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html#faq">FAQ</a></li>
+                        <li><a href="contact.html#emergency">Emergency Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 1800 AGEIS (1800 24347)</p>
+                        <p><i class="fas fa-envelope"></i> support@ageis.com.au</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Melbourne, Australia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AGEIS SUPPORT. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
