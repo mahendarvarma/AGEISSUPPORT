@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book a Service - AGEIS SUPPORT</title>
-    <meta name="description" content="Book free aged care, disability, and mental health services with AGEIS SUPPORT. Simple, safe, and accessible booking process.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Accessibility Controls -->
     <div class="accessibility-controls">
-        <button id="fontIncrease" class="access-btn" title="Increase font size">
+        <button class="access-btn" onclick="adjustFontSize('increase')" title="Increase font size">
             <i class="fas fa-plus"></i>
         </button>
-        <button id="fontDecrease" class="access-btn" title="Decrease font size">
+        <button class="access-btn" onclick="adjustFontSize('decrease')" title="Decrease font size">
             <i class="fas fa-minus"></i>
         </button>
-        <button id="highContrast" class="access-btn" title="Toggle high contrast">
+        <button class="access-btn" onclick="toggleHighContrast()" title="High contrast mode">
             <i class="fas fa-adjust"></i>
         </button>
-        <button id="voiceAssist" class="access-btn" title="Voice assistance">
+        <button class="access-btn" onclick="toggleVoiceAssistance()" title="Voice assistance">
             <i class="fas fa-volume-up"></i>
         </button>
     </div>
@@ -31,7 +30,10 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <h1>AGEIS SUPPORT</h1>
+                    <a href="index.html" class="logo-link">
+                        <img src="agieslogo.jpg" alt="AGEIS SUPPORT Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <h1 class="logo-text">AGEIS SUPPORT</h1>
+                    </a>
                 </div>
                 
                 <!-- Mobile Hamburger Menu -->
@@ -65,27 +67,30 @@
                 <div class="nav-cta">
                     <a href="book-service.html" class="btn btn-primary">Book Now</a>
                 </div>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
             </div>
         </nav>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header booking-header">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <h1>Book a Service</h1>
-            <p>Simple, free booking for the care services you need. We're here to help.</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Book Your Care Service</h1>
+                    <p>Simple, free booking for the care services you need. We're here to help you get the support you deserve.</p>
+                    <div class="hero-buttons">
+                        <a href="#booking-section" class="btn btn-primary">Start Booking</a>
+                        <a href="contact.html" class="btn btn-secondary">Get Help</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Booking Process Steps -->
-    <section class="booking-steps">
+    <!-- Booking Progress -->
+    <section class="booking-progress">
         <div class="container">
-            <div class="steps-indicator">
+            <div class="progress-steps">
                 <div class="step-indicator active" data-step="1">
                     <div class="step-number">1</div>
                     <div class="step-label">Service Details</div>
@@ -102,120 +107,108 @@
         </div>
     </section>
 
-    <!-- Booking Form -->
-    <section class="booking-form-section">
+    <!-- How It Works -->
+    <section class="how-it-works">
         <div class="container">
-            <div class="booking-content">
-                <div class="booking-info">
-                    <h2>How Our Booking Works</h2>
-                    <div class="info-cards">
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <h3>Quick & Easy</h3>
-                            <p>Complete your booking in just a few minutes with our simple form.</p>
-                        </div>
-                        
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <h3>Safe & Secure</h3>
-                            <p>Your information is protected and kept confidential at all times.</p>
-                        </div>
-                        
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="fas fa-gift"></i>
-                            </div>
-                            <h3>Completely Free</h3>
-                            <p>No hidden fees or charges. Our booking service is always free.</p>
-                        </div>
-                        
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="fas fa-handshake"></i>
-                            </div>
-                            <h3>Personal Support</h3>
-                            <p>We'll connect you with the right service provider for your needs.</p>
-                        </div>
+            <h2>How Our Booking Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-clock"></i>
                     </div>
-                    
-                    <div class="funding-info">
-                        <h3>Government Funding Available</h3>
-                        <p>We can help you access:</p>
-                        <ul>
-                            <li><strong>NDIS</strong> - National Disability Insurance Scheme</li>
-                            <li><strong>Aged Care</strong> - Home care packages and services</li>
-                            <li><strong>Medicare</strong> - Mental health services and rebates</li>
-                            <li><strong>Private Health</strong> - Insurance coverage assistance</li>
-                        </ul>
-                    </div>
+                    <h3>Quick & Easy</h3>
+                    <p>Complete your booking in just a few minutes with our simple form.</p>
                 </div>
-                
-                <div class="booking-form-container">
-                    <form class="booking-form" id="bookingForm">
-                        <!-- Step 1: Service Details -->
-                        <div class="form-step active" data-step="1">
-                            <h3>Step 1: Service Details</h3>
-                            
-                            <div class="form-group">
-                                <label for="serviceType">Service Type *</label>
-                                <select id="serviceType" name="serviceType" required>
-                                    <option value="">Select a service</option>
-                                    <optgroup label="Home Assistance">
-                                        <option value="home-cleaning">Home Cleaning</option>
-                                        <option value="meal-preparation">Meal Preparation</option>
-                                        <option value="home-maintenance">Home Maintenance</option>
-                                        <option value="shopping-assistance">Shopping Assistance</option>
-                                    </optgroup>
-                                    <optgroup label="Personal Care">
-                                        <option value="personal-care">Personal Care (Bathing, Dressing)</option>
-                                        <option value="medication-management">Medication Management</option>
-                                        <option value="mobility-assistance">Mobility Assistance</option>
-                                    </optgroup>
-                                    <optgroup label="Nursing Care">
-                                        <option value="nursing-care">Nursing Care</option>
-                                        <option value="wound-care">Wound Care</option>
-                                        <option value="health-monitoring">Health Monitoring</option>
-                                    </optgroup>
-                                    <optgroup label="Transport">
-                                        <option value="medical-transport">Medical Appointments</option>
-                                        <option value="social-transport">Social Activities</option>
-                                        <option value="shopping-transport">Shopping Trips</option>
-                                    </optgroup>
-                                    <optgroup label="Mental Health">
-                                        <option value="counseling">Individual Counseling</option>
-                                        <option value="online-therapy">Online Therapy</option>
-                                        <option value="support-group">Support Group</option>
-                                        <option value="family-counseling">Family Counseling</option>
-                                    </optgroup>
-                                    <optgroup label="Social Support">
-                                        <option value="companionship">Companionship</option>
-                                        <option value="social-activities">Social Activities</option>
-                                        <option value="community-programs">Community Programs</option>
-                                    </optgroup>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="serviceFrequency">How often do you need this service? *</label>
-                                <select id="serviceFrequency" name="serviceFrequency" required>
-                                    <option value="">Select frequency</option>
-                                    <option value="one-time">One-time service</option>
-                                    <option value="weekly">Weekly</option>
-                                    <option value="fortnightly">Fortnightly</option>
-                                    <option value="monthly">Monthly</option>
-                                    <option value="as-needed">As needed</option>
-                                </select>
-                            </div>
-                            
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safe & Secure</h3>
+                    <p>Your information is protected and kept confidential at all times.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Completely Free</h3>
+                    <p>No hidden fees or charges. Our service is completely free to use.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Personal Support</h3>
+                    <p>We'll connect you with the right care provider for your specific needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-section" id="booking-section">
+        <div class="container">
+            <div class="booking-form-container">
+                <form class="booking-form" id="bookingForm">
+                    <!-- Step 1: Service Details -->
+                    <div class="form-step active" id="step1">
+                        <h3>Step 1: Service Details</h3>
+                        
+                        <div class="form-group">
+                            <label for="serviceType">Service Type *</label>
+                            <select id="serviceType" name="serviceType" required>
+                                <option value="">Select a service</option>
+                                <optgroup label="Home Assistance">
+                                    <option value="home-cleaning">Home Cleaning</option>
+                                    <option value="meal-preparation">Meal Preparation</option>
+                                    <option value="home-maintenance">Home Maintenance</option>
+                                    <option value="shopping-assistance">Shopping Assistance</option>
+                                </optgroup>
+                                <optgroup label="Personal Care">
+                                    <option value="personal-care">Personal Care (Bathing, Dressing)</option>
+                                    <option value="medication-management">Medication Management</option>
+                                    <option value="mobility-assistance">Mobility Assistance</option>
+                                </optgroup>
+                                <optgroup label="Nursing Care">
+                                    <option value="nursing-care">Nursing Care</option>
+                                    <option value="wound-care">Wound Care</option>
+                                    <option value="health-monitoring">Health Monitoring</option>
+                                </optgroup>
+                                <optgroup label="Transport">
+                                    <option value="medical-transport">Medical Appointments</option>
+                                    <option value="social-transport">Social Activities</option>
+                                    <option value="shopping-transport">Shopping Trips</option>
+                                </optgroup>
+                                <optgroup label="Mental Health">
+                                    <option value="counseling">Individual Counseling</option>
+                                    <option value="online-therapy">Online Therapy</option>
+                                    <option value="support-group">Support Group</option>
+                                    <option value="family-counseling">Family Counseling</option>
+                                </optgroup>
+                                <optgroup label="Social Support">
+                                    <option value="companionship">Companionship</option>
+                                    <option value="social-activities">Social Activities</option>
+                                    <option value="community-programs">Community Programs</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="serviceFrequency">How often do you need this service? *</label>
+                            <select id="serviceFrequency" name="serviceFrequency" required>
+                                <option value="">Select frequency</option>
+                                <option value="one-time">One-time service</option>
+                                <option value="weekly">Weekly</option>
+                                <option value="fortnightly">Fortnightly</option>
+                                <option value="monthly">Monthly</option>
+                                <option value="as-needed">As needed</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
                             <div class="form-group">
                                 <label for="preferredDate">Preferred Start Date</label>
-                                <input type="date" id="preferredDate" name="preferredDate" min="">
+                                <input type="date" id="preferredDate" name="preferredDate">
                             </div>
-                            
                             <div class="form-group">
                                 <label for="preferredTime">Preferred Time</label>
                                 <select id="preferredTime" name="preferredTime">
@@ -226,246 +219,133 @@
                                     <option value="flexible">Flexible</option>
                                 </select>
                             </div>
-                            
-                            <div class="form-group">
-                                <label for="urgency">Urgency Level</label>
-                                <select id="urgency" name="urgency">
-                                    <option value="standard">Standard (within 1-2 weeks)</option>
-                                    <option value="urgent">Urgent (within 3-5 days)</option>
-                                    <option value="emergency">Emergency (within 24 hours)</option>
-                                </select>
-                            </div>
-                            
-                            <button type="button" class="btn btn-primary btn-large next-step" data-next="2">Next Step</button>
                         </div>
                         
-                        <!-- Step 2: Personal Information -->
-                        <div class="form-step" data-step="2">
-                            <h3>Step 2: Personal Information</h3>
-                            
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="firstName">First Name *</label>
-                                    <input type="text" id="firstName" name="firstName" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="lastName">Last Name *</label>
-                                    <input type="text" id="lastName" name="lastName" required>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="phone">Phone Number *</label>
-                                <input type="tel" id="phone" name="phone" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="address">Address *</label>
-                                <textarea id="address" name="address" rows="3" required placeholder="Please provide your full address"></textarea>
-                            </div>
-                            
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="age">Age Range</label>
-                                    <select id="age" name="age">
-                                        <option value="">Select age range</option>
-                                        <option value="18-30">18-30 years</option>
-                                        <option value="31-50">31-50 years</option>
-                                        <option value="51-65">51-65 years</option>
-                                        <option value="66-80">66-80 years</option>
-                                        <option value="80+">80+ years</option>
-                                        <option value="prefer-not-to-say">Prefer not to say</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="relationship">Booking For</label>
-                                    <select id="relationship" name="relationship">
-                                        <option value="self">Myself</option>
-                                        <option value="family-member">Family Member</option>
-                                        <option value="friend">Friend</option>
-                                        <option value="client">Client</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="fundingOption">Funding Option</label>
-                                <select id="fundingOption" name="fundingOption">
-                                    <option value="">Select funding option</option>
-                                    <option value="ndis">NDIS</option>
-                                    <option value="aged-care">Aged Care Package</option>
-                                    <option value="medicare">Medicare</option>
-                                    <option value="private-health">Private Health Insurance</option>
-                                    <option value="private-pay">Private Pay</option>
-                                    <option value="not-sure">Not Sure - Need Help</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="additionalNotes">Additional Information</label>
-                                <textarea id="additionalNotes" name="additionalNotes" rows="4" placeholder="Please share any specific needs, preferences, or additional information that would help us provide the best service..."></textarea>
-                            </div>
-                            
-                            <div class="form-buttons">
-                                <button type="button" class="btn btn-secondary prev-step" data-prev="1">Previous</button>
-                                <button type="button" class="btn btn-primary next-step" data-next="3">Next Step</button>
-                            </div>
+                        <div class="form-group">
+                            <label for="urgency">Urgency Level</label>
+                            <select id="urgency" name="urgency">
+                                <option value="standard">Standard (within 1-2 weeks)</option>
+                                <option value="urgent">Urgent (within 3-5 days)</option>
+                                <option value="emergency">Emergency (within 24 hours)</option>
+                            </select>
                         </div>
                         
-                        <!-- Step 3: Confirmation -->
-                        <div class="form-step" data-step="3">
-                            <h3>Step 3: Review & Confirm</h3>
-                            
-                            <div class="confirmation-summary">
-                                <h4>Booking Summary</h4>
-                                <div class="summary-item">
-                                    <strong>Service:</strong> <span id="summary-service"></span>
-                                </div>
-                                <div class="summary-item">
-                                    <strong>Frequency:</strong> <span id="summary-frequency"></span>
-                                </div>
-                                <div class="summary-item">
-                                    <strong>Preferred Date:</strong> <span id="summary-date"></span>
-                                </div>
-                                <div class="summary-item">
-                                    <strong>Preferred Time:</strong> <span id="summary-time"></span>
-                                </div>
-                                <div class="summary-item">
-                                    <strong>Urgency:</strong> <span id="summary-urgency"></span>
-                                </div>
-                                <div class="summary-item">
-                                    <strong>Name:</strong> <span id="summary-name"></span>
-                                </div>
-                                <div class="summary-item">
-                                    <strong>Contact:</strong> <span id="summary-contact"></span>
-                                </div>
-                                <div class="summary-item">
-                                    <strong>Funding:</strong> <span id="summary-funding"></span>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group checkbox-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" id="termsConsent" name="termsConsent" required>
-                                    <span class="checkmark"></span>
-                                    I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a>
-                                </label>
-                            </div>
-                            
-                            <div class="form-group checkbox-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" id="marketingConsent" name="marketingConsent">
-                                    <span class="checkmark"></span>
-                                    I would like to receive updates about AGEIS SUPPORT services and resources
-                                </label>
-                            </div>
-                            
-                            <div class="form-group checkbox-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" id="dataConsent" name="dataConsent" required>
-                                    <span class="checkmark"></span>
-                                    I consent to AGEIS SUPPORT collecting and using my information to provide the requested service
-                                </label>
-                            </div>
-                            
-                            <div class="form-buttons">
-                                <button type="button" class="btn btn-secondary prev-step" data-prev="2">Previous</button>
-                                <button type="submit" class="btn btn-primary btn-large">Submit Booking Request</button>
-                            </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-primary btn-large" onclick="nextStep()">Next Step</button>
                         </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- What Happens Next -->
-    <section class="what-happens-next">
-        <div class="container">
-            <h2>What Happens Next?</h2>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="process-number">1</div>
-                    <div class="process-content">
-                        <h3>Confirmation Email</h3>
-                        <p>You'll receive an email confirmation with your booking details within 24 hours.</p>
                     </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="process-number">2</div>
-                    <div class="process-content">
-                        <h3>Service Provider Matching</h3>
-                        <p>We'll match you with qualified service providers in your area based on your needs.</p>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="process-number">3</div>
-                    <div class="process-content">
-                        <h3>Initial Contact</h3>
-                        <p>Your assigned service provider will contact you to discuss details and schedule your service.</p>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="process-number">4</div>
-                    <div class="process-content">
-                        <h3>Service Delivery</h3>
-                        <p>Receive your requested service with ongoing support and quality monitoring.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Support Information -->
-    <section class="support-info">
-        <div class="container">
-            <div class="support-content">
-                <div class="support-text">
-                    <h2>Need Help with Your Booking?</h2>
-                    <p>Our friendly support team is here to help you through the booking process and answer any questions you may have.</p>
                     
-                    <div class="support-options">
-                        <div class="support-option">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h3>Call Us</h3>
-                                <p>1800 AGEIS (1800 24347)</p>
-                                <p>Monday - Friday: 8AM - 6PM</p>
+                    <!-- Step 2: Personal Information -->
+                    <div class="form-step" id="step2">
+                        <h3>Step 2: Personal Information</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
                             </div>
                         </div>
                         
-                        <div class="support-option">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h3>Email Us</h3>
-                                <p>support@ageis.com.au</p>
-                                <p>We'll respond within 24 hours</p>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">Address *</label>
+                            <textarea id="address" name="address" rows="3" required placeholder="Please provide your full address"></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="age">Age Range</label>
+                                <select id="age" name="age">
+                                    <option value="">Select age range</option>
+                                    <option value="18-30">18-30 years</option>
+                                    <option value="31-50">31-50 years</option>
+                                    <option value="51-65">51-65 years</option>
+                                    <option value="66-80">66-80 years</option>
+                                    <option value="80+">80+ years</option>
+                                    <option value="prefer-not-to-say">Prefer not to say</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="relationship">Booking For</label>
+                                <select id="relationship" name="relationship">
+                                    <option value="myself">Myself</option>
+                                    <option value="family-member">Family Member</option>
+                                    <option value="friend">Friend</option>
+                                    <option value="client">Client</option>
+                                </select>
                             </div>
                         </div>
                         
-                        <div class="support-option">
-                            <i class="fas fa-comments"></i>
-                            <div>
-                                <h3>Live Chat</h3>
-                                <p>Available during business hours</p>
-                                <p>Click the chat icon to start</p>
-                            </div>
+                        <div class="form-group">
+                            <label for="funding">Funding Source</label>
+                            <select id="funding" name="funding">
+                                <option value="">Select funding source</option>
+                                <option value="ndis">NDIS</option>
+                                <option value="aged-care">Aged Care Package</option>
+                                <option value="medicare">Medicare</option>
+                                <option value="private-health">Private Health Insurance</option>
+                                <option value="self-funded">Self-funded</option>
+                                <option value="not-sure">Not sure</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="additionalNotes">Additional Notes</label>
+                            <textarea id="additionalNotes" name="additionalNotes" rows="4" placeholder="Please provide any additional information about your needs or preferences"></textarea>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary" onclick="prevStep()">Previous</button>
+                            <button type="button" class="btn btn-primary btn-large" onclick="nextStep()">Next Step</button>
                         </div>
                     </div>
-                </div>
-                
-                <div class="support-image">
-                    <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Supportive team helping clients" loading="lazy">
-                </div>
+                    
+                    <!-- Step 3: Confirmation -->
+                    <div class="form-step" id="step3">
+                        <h3>Step 3: Confirmation</h3>
+                        
+                        <div class="booking-summary">
+                            <h4>Booking Summary</h4>
+                            <div id="summaryContent">
+                                <!-- Summary will be populated by JavaScript -->
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                I would like to receive updates about AGEIS SUPPORT services
+                            </label>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary" onclick="prevStep()">Previous</button>
+                            <button type="button" class="btn btn-primary btn-large" onclick="submitBooking()">Submit Booking</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -475,13 +355,13 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>AGEIS SUPPORT</h3>
-                    <p>Empowering lives with care, dignity, and support. Connecting Australians to essential care services.</p>
+                    <h4>AGEIS SUPPORT</h4>
+                    <p>Connecting you with trusted care services across Australia. Free, simple, and reliable.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -503,20 +383,18 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contact Info</h4>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> 1800 AGEIS (1800 24347)</p>
-                        <p><i class="fas fa-envelope"></i> support@ageis.com.au</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Melbourne, Australia</p>
-                    </div>
+                    <p><i class="fas fa-phone"></i> 1800 AGEIS (1800 24347)</p>
+                    <p><i class="fas fa-envelope"></i> info@ageissupport.com.au</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Australia Wide Service</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 AGEIS SUPPORT. All rights reserved. | Privacy Policy | Terms of Service</p>
+                <p>&copy; 2024 AGEIS SUPPORT. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script src="booking.js"></script>
+    <script src="booking-new.js"></script>
 </body>
 </html>
